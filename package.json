@@ -1,0 +1,20 @@
+{
+	"name": "update-ml-price",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "nodemon ./src/index.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"exceljs": "^4.4.0",
+		"xlsx": "^0.18.5"
+	},
+	"devDependencies": {
+		"nodemon": "^3.1.2"
+	}
+}
