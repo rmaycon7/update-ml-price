@@ -169,3 +169,13 @@ for (let dbproduto in dataBase) {
 // let text = "666-66484484+64646   asdasda  asdasd  ";
 // log(text);
 // log(cleanTextWhiteSpaces(text));
+const checkRange = require("lodash");
+const x = 4;
+let teste = 0;
+
+if (checkRange.inRange(x, 1, 3)) {
+	// something
+	log("deu certo");
+} else {
+	log("none");
+}
