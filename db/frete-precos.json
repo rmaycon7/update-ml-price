@@ -1,0 +1,112 @@
+[
+	{
+		"peso_a": 0,
+		"peso_b": 0.3,
+		"valor": 52.55
+	},
+	{
+		"peso_a": 0.3,
+		"peso_b": 0.5,
+		"valor": 53.85
+	},
+	{
+		"peso_a": 0.5,
+		"peso_b": 1,
+		"valor": 57.15
+	},
+	{
+		"peso_a": 1,
+		"peso_b": 2,
+		"valor": 65.9
+	},
+	{
+		"peso_a": 2,
+		"peso_b": 3,
+		"valor": 77.15
+	},
+	{
+		"peso_a": 3,
+		"peso_b": 4,
+		"valor": 79.75
+	},
+	{
+		"peso_a": 4,
+		"peso_b": 5,
+		"valor": 82.3
+	},
+	{
+		"peso_a": 5,
+		"peso_b": 9,
+		"valor": 107.2
+	},
+	{
+		"peso_a": 9,
+		"peso_b": 13,
+		"valor": 160.85
+	},
+	{
+		"peso_a": 13,
+		"peso_b": 17,
+		"valor": 198.5
+	},
+	{
+		"peso_a": 17,
+		"peso_b": 23,
+		"valor": 226.5
+	},
+	{
+		"peso_a": 23,
+		"peso_b": 30,
+		"valor": 245.65
+	},
+	{
+		"peso_a": 30,
+		"peso_b": 40,
+		"valor": 259.45
+	},
+	{
+		"peso_a": 40,
+		"peso_b": 50,
+		"valor": 272.8
+	},
+	{
+		"peso_a": 50,
+		"peso_b": 60,
+		"valor": 292.05
+	},
+	{
+		"peso_a": 60,
+		"peso_b": 70,
+		"valor": 323.15
+	},
+	{
+		"peso_a": 70,
+		"peso_b": 80,
+		"valor": 351.8
+	},
+	{
+		"peso_a": 80,
+		"peso_b": 90,
+		"valor": 382.65
+	},
+	{
+		"peso_a": 90,
+		"peso_b": 100,
+		"valor": 428.0
+	},
+	{
+		"peso_a": 100,
+		"peso_b": 125,
+		"valor": 467.75
+	},
+	{
+		"peso_a": 125,
+		"peso_b": 150,
+		"valor": 497.9
+	},
+	{
+		"peso_a": 150,
+		"peso_b": 9999,
+		"valor": 522.5
+	}
+]
