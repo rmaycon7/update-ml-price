@@ -14,7 +14,8 @@
 		"exceljs": "^4.4.0",
 		"fuse.js": "^7.0.0",
 		"lodash": "^4.17.21",
-		"xlsx": "^0.18.5"
+		"xlsx": "^0.18.5",
+		"xlsx-js-style": "^1.2.0"
 	},
 	"devDependencies": {
 		"nodemon": "^3.1.2"

@@ -58,7 +58,8 @@ bloco para criar a logica de mapear o preco dos produtos que possuem mais de um 
 // console.log("teste");
 
 const { exec } = require("child_process");
-const reader = require("xlsx");
+// const reader = require("xlsx");
+const reader = require("xlsx-js-style");
 const { utils } = reader;
 const { log } = require("console");
 const frete_preco = require("../db/frete-precos.json");
@@ -560,7 +561,7 @@ const writeCnahges = (filename,data) => {
 
 	// utils.
 	filename = filename.includes('.xlsx')? filename: `${filename}.xlsx`
-	reader.writeFile(mlProdutosSheet, filename);
+	reader.writeFile(mlProdutosSheet, filename,{bookSST:true});
 };
 
 
@@ -586,14 +587,13 @@ mlProdutos.forEach(data => {
 	const fuse = new Fuse([description], options);
 
 	const result = fuse.search("KIT");
-	let sku = data['SKU'].split('/')
-	let skuSise = sku.length
-	if (result.length> 0 && skuSise >1){
-		kitProdutos.push(data)
-		console.log({result});
-	}
-	else{
-		semKitProdutos.push(data)
+	let sku = data["SKU"].split("/");
+	let skuSise = sku.length;
+	if (result.length > 0 && skuSise == 1) {
+		kitProdutos.push(data);
+		// console.log({result});
+	} else {
+		semKitProdutos.push(data);
 	}
 
 	// if(description.includes('KIT')){
@@ -601,14 +601,15 @@ mlProdutos.forEach(data => {
 	// }
 });
 
-kitProdutos = cabecalho.concat(kitProdutos)
-semKitProdutos = cabecalho.concat(semKitProdutos)
+kitProdutos = cabecalho.concat(kitProdutos);
+semKitProdutos = cabecalho.concat(semKitProdutos);
 
-log({semKitSize:semKitProdutos.length})
+log({ semKitSize: semKitProdutos.length });
+log({ comKitZze: kitProdutos.length });
 
-
-// writeCnahges('sem-kit',semKitProdutos)
-// writeCnahges('com-kit',kitProdutos)
+// log({props:mlProdutosSheet.Sheets['Anúncios']})
+writeCnahges('sem-kit',semKitProdutos)
+writeCnahges("com-kit", kitProdutos);
 
 // const totalteste = reader.readFile("./ml-new-produtos.xlsx");
 
